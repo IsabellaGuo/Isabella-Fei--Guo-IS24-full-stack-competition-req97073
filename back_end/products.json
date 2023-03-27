@@ -1,0 +1,90 @@
+[{
+"productId": 1,
+"productName": "PowerPoint Pro",
+"productOwnerName": "John Doe",
+"Developers": [
+"Alice Smith",
+"Bob Johnson",
+"Charlie Lee",
+"Dave Thompson",
+"Emma Brown"
+],
+"scrumMasterName": "Sarah Taylor",
+"startDate": "2022/01/01",
+"methodology": "Scrum"
+},
+{
+"productId": 2,
+"productName": "TaskMaster",
+"productOwnerName": "Amy Chen",
+"Developers": [
+"Fred Davis",
+"Gina Rodriguez",
+"Henry Wong",
+"Ivy Kim",
+"Jackie Chan"
+],
+"scrumMasterName": "Kevin Lee",
+"startDate": "2021/06/15",
+"methodology": "Kanban"
+},
+{
+"productId": 3,
+"productName": "WeatherApp",
+"productOwnerName": "Lisa Jackson",
+"Developers": [
+"Katie Garcia",
+"Liam Smith",
+"Mary Johnson",
+"Nate Brown",
+"Olivia Davis"
+],
+"scrumMasterName": "Peter Chen",
+"startDate": "2022/02/20",
+"methodology": "Agile"
+},
+{
+"productId": 4,
+"productName": "FitnessTracker",
+"productOwnerName": "David Kim",
+"Developers": [
+"Pamela Rodriguez",
+"Quincy Lee",
+"Rachel Wong",
+"Steve Chen",
+"Tina Jackson"
+],
+"scrumMasterName": "Victor Brown",
+"startDate": "2021/09/01",
+"methodology": "Scrum"
+},
+{
+"productId": 5,
+"productName": "BudgetManager",
+"productOwnerName": "Grace Davis",
+"Developers": [
+"Uma Patel",
+"Vivian Lee",
+"Wendy Chen",
+"Xavier Wong",
+"Yara Rodriguez"
+],
+"scrumMasterName": "Zoe Kim",
+"startDate": "2022/03/15",
+"methodology": "Kanban"
+},
+{
+"productId": 6,
+"productName": "RecipeFinder",
+"productOwnerName": "Ethan Brown",
+"Developers": [
+"Abby Davis",
+"Benjamin Lee",
+"Candace Chen",
+"Derek Wong",
+"Emily Rodriguez"
+],
+"scrumMasterName": "Frank Jackson",
+"startDate": "2021/12/01",
+"methodology": "Agile"
+}]
