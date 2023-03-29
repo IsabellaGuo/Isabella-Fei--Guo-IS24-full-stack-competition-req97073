@@ -11,7 +11,7 @@
 ],
 "scrumMasterName": "Sarah Taylor",
 "startDate": "2022/01/01",
-"methodology": "Scrum"
+"methodology": "Waterfall"
 },
 {
 "productId": 2,
@@ -26,7 +26,7 @@
 ],
 "scrumMasterName": "Kevin Lee",
 "startDate": "2021/06/15",
-"methodology": "Kanban"
+"methodology": "Waterfall"
 },
 {
 "productId": 3,
@@ -56,7 +56,7 @@
 ],
 "scrumMasterName": "Victor Brown",
 "startDate": "2021/09/01",
-"methodology": "Scrum"
+"methodology": "Waterfall"
 },
 {
 "productId": 5,
@@ -71,7 +71,7 @@
 ],
 "scrumMasterName": "Zoe Kim",
 "startDate": "2022/03/15",
-"methodology": "Kanban"
+"methodology": "Waterfall"
 },
 {
 "productId": 6,
