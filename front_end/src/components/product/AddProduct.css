@@ -1,0 +1,40 @@
+.add-button {
+    margin: 4px 2px;
+}
+
+.add-button {
+    margin: 8px 4px;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    width: 100%;
+
+}
+
+.add-lable {
+    margin: 10px 10px;
+}
+
+.add-save {
+    margin: 20px 20px;
+    width: 50%
+}
+
+.add-cancel {
+    margin: 20px auto;
+    width: 50%
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 30px;
+    width: 50%;
+}

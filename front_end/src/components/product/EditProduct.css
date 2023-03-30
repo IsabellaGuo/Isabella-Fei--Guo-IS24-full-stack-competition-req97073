@@ -1,0 +1,37 @@
+.edit-button {
+    margin: 8px 4px;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    width: 100%;
+
+}
+
+.edit-lable {
+    margin: 10px 10px;
+}
+
+.edit-save {
+    margin: 20px 20px;
+    width: 50%
+}
+
+.edit-cancel {
+    margin: 20px auto;
+    width: 50%
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 30px;
+    width: 50%;
+}
+

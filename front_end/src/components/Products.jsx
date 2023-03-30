@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
-import Select from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
 
-
-function Products() {
-    const [backendData, setBackendData] = useState([]);
+// Used Material UI's data grid to create a table of products
+function Products({products, editSelectedProduct}) {
+   
     
     const columns = [
         {
@@ -56,22 +54,24 @@ function Products() {
         return 110;
     }
   
-    useEffect(() => {
-        fetch('/api').then(res => res.json()).then(data => {
-        console.log("DATA: ", data.products)
-            setBackendData(data.products.map(prod => {
-                prod.id = prod.productId;
-                return prod;
-        }))
-        })
-        
-    }, [])
+   
+
+    const handleSelectedRow = (e) => { 
+        console.log("Selected Row: ", e);
+        const selectedProduct = products.find(prod => prod.id === e[0]);
+        console.log("Selected Product: ", selectedProduct);
+       editSelectedProduct(selectedProduct);
+       
+    }
+
+    
+
  
     return (
         <div style={{ width: '100%', height: 400, marginTop:50 }}>
         
            
-            {backendData.length && <DataGrid rows={backendData} columns={columns} pageSize={5} getRowHeight={getRowHeight} checkboxSelection /> }
+            {products.length && <DataGrid rows={products} columns={columns} pageSize={5} getRowHeight={getRowHeight} checkboxSelection onRowSelectionModelChange={handleSelectedRow} disableMultipleRowSelection={true} /> }
             
       </div>
         

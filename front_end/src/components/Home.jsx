@@ -5,7 +5,7 @@ import AddProductForm from "./components/product/AddProduct.jsx";
 import Search from "./components/Search";
 import EditProductForm from "./components/product/EditProduct";
 
-function App() {
+function Home() {
   const [backendData, setBackendData] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -18,11 +18,10 @@ function App() {
         return product.scrumMasterName
           .toLowerCase()
           .includes(searchTerm.toLowerCase());
-      } else {
-        return product.Developers.join(" ").toLowerCase()
+      } else { 
+        return  product.Developers.join(" ").toLowerCase()
         .includes(searchTerm.toLowerCase());
       }
-
     });
     setSearchResults(filterResults);
   };
@@ -30,7 +29,7 @@ function App() {
   // This function is passed down to the Products component
   const editProduct = (product) => {
     // Edit the product in the JSON file
-    fetch("/api/products/" + product.productId, {
+    fetch("/api/product/" + product.productId, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -107,4 +106,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
