@@ -4,11 +4,12 @@ This is a full stack product manager web application built with React for the fr
 
 ## Technologies Used
 
-React
-NodeJS
-React Modal
-Material UI
-Nodemon
+- React
+- NodeJS
+- Express
+- React Modal
+- Material UI
+- Nodemon
 
 ## Installation
 
@@ -16,7 +17,7 @@ To install this application, follow these steps:
 
 Clone this repository to your local machine.
 Navigate to the project directory.
-Run npm install to install all dependencies.
+Run ```npm install``` to install all dependencies.
 
 ## Usage
 
@@ -45,7 +46,7 @@ This endpoint returns a list of all products in the database. The response conta
 - Start Date
 - Methodology (Agile or Waterfall)
 
-### POST '/api'
+### POST '/api '
 This endpoint creates a new product with the specified properties. The request body should contain a JSON object with the following properties:
 - Product Name
 - Scrum Master
@@ -54,7 +55,7 @@ This endpoint creates a new product with the specified properties. The request b
 - Start Date
 - Methodology (Agile or Waterfall)
 
-### PUT '/api/product/:id
+### PUT '/api/product/:id '
 This endpoint updates the product with the specified ID with the provided properties. The request body should contain a JSON object with the following properties:
 - Product Name
 - Scrum Master
