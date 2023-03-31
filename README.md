@@ -33,6 +33,8 @@ Material UI provides a filtering function, accessible via the three-dot menu nex
 
 ## API Endpoints
 
+The backend is running on "http://localhost:8000/api"
+
 This application uses a RESTful API that provides the following endpoints:
 
 ### GET '/api'
@@ -62,3 +64,6 @@ This endpoint updates the product with the specified ID with the provided proper
 - Product Owner
 - Developer Names (up to 5)
 - Methodology (Agile or Waterfall)
+
+## Data
+The data is stored in the back_end folder as a products.json file.

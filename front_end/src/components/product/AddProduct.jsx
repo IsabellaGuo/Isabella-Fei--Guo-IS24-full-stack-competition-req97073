@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import Modal from 'react-modal';
 import Button from '@mui/material/Button';
 import './AddProduct.css';
-//import { v4 as uuid4 } from 'uuid';
+
 
 export default function AddProductForm({ addNewProduct }){
     const [form, setForm] = useState(false);

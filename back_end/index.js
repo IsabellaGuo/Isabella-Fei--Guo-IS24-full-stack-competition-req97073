@@ -28,7 +28,6 @@ server.post("/api", (req, res) => {
 
     const products = JSON.parse(data);
     const newProduct = req.body;
-    console.log("newProduct: ", req);
     products.push(newProduct);
 
     fs.writeFile("products.json", JSON.stringify(products), "utf8", (err) => {
@@ -38,12 +37,12 @@ server.post("/api", (req, res) => {
         return;
       }
 
-      // res.status(200).send('Product added successfully');
       res.status(200).json({ products: products });
     });
   });
 });
 
+//CRUD - Update
 server.put('/api/product/:productId', (req, res) => {
   fs.readFile('./products.json', 'utf8', (err, data) => {
     if (err) {
@@ -54,9 +53,7 @@ server.put('/api/product/:productId', (req, res) => {
     const products = JSON.parse(data);
       
     const productId = req.params.productId;
-      const updatedProduct = req.body;
-      console.log("updatedProduct: ", updatedProduct);
-      console.log("productId: ", productId);
+    const updatedProduct = req.body;
 
     const productIndex = products.findIndex(product => product.productId == productId);
 
@@ -79,6 +76,7 @@ server.put('/api/product/:productId', (req, res) => {
   });
 });
 
+//CRUD - Read
 server.get('/api/product/:productId', (req, res) => {
   fs.readFile('./products.json', 'utf8', (err, data) => {
     if (err) {

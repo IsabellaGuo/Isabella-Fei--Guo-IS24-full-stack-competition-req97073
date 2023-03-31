@@ -4,8 +4,6 @@ import Button from '@mui/material/Button';
 import './EditProduct.css';
 
 export default function EditProductForm({ editProduct, selectedProduct }) {
-    console.log('editProduct: ', editProduct)
-    const [formData, setFormData] = useState({ editProduct });
     const [openEditForm, setOpenEditForm] = useState(false);
     const prodId = useRef();
     const prodName = useRef();
@@ -35,7 +33,7 @@ export default function EditProductForm({ editProduct, selectedProduct }) {
         setOpenEditForm(true);
     }
 
-
+    // handleSubmit is a function that is called when the user clicks the submit button.
     const handleSubmit = (event) => {
         event.preventDefault();
         editProduct({
@@ -59,8 +57,8 @@ export default function EditProductForm({ editProduct, selectedProduct }) {
         <Button
           className="edit-button"
           onClick={handleClick}
-                variant="contained"
-                disabled={!selectedProduct}
+          variant="contained"
+          disabled={!selectedProduct}
         >
           Edit a product
         </Button>

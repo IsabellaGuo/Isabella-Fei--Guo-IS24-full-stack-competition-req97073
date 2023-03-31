@@ -30,7 +30,7 @@ function App() {
   // This function is passed down to the Products component
   const editProduct = (product) => {
     // Edit the product in the JSON file
-    fetch("/api/products/" + product.productId, {
+    fetch("/api/product/" + product.productId, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
